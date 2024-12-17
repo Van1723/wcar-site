@@ -71,20 +71,22 @@
         </p>
     </div>
     <div class="form">
-        <form id="formSubmit">
-            <h2 id="tituloFormulario">Faça seu orçamento</h2>
+        <form id="formSubmit" method="get" onsubmit="abrirWhatsapp()">
+            <h2 id="tituloFormulario">
+                Faça seu orçamento
+            </h2>
             <label for="">Nome</label>
-                <input type="text">
+                <input  id="nome"type="text">
             <label for="">Celular</label>
-                <input type="tel" name="" id="">
+                <input id="celular" type="tel" name="" id="">
             <label for="">Problema do carro</label>
-                <select name="problemaCarro" id="">
+                <select id="problema" name="problemaCarro" id="">
                     <option value="Ar-condicionado"></option>
                 </select>
             <label for="">Marca e modelo do carro</label>
-                <input type="text">
+                <input id="marcaModelo" type="text">
             <label for="">descrição do problema</label>
-                <textarea name="" id=""></textarea>
+                <textarea  id= "descricao"name="" id=""></textarea>
             <button type="submit">Enviar</button>
 
 
@@ -99,4 +101,5 @@
         <h2>Localizada em Pirapozinho-SP na avenida bertasso, 2023</h2>
     </div>
 </footer>
+<script src="./assets/JS/script.js"></script>
 </html>
