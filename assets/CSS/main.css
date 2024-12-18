@@ -90,11 +90,11 @@ p{
     align-items: center;
    
     margin: 40px;
-    border: 1px solid rgb(68, 0, 255);
+    border: 2px solid rgb(68, 0, 255);
     border-radius: 10px;
     padding: 30px;
      
-    
+    background-color: rgb(233, 233, 241);
     justify-content: center;  
     align-items: center;  
     
@@ -114,8 +114,24 @@ input{
    margin: auto;
    margin-top: 10px;
    border-radius: 10px;
+   padding: 5px 80px;
+   width: 360px;
 
 }
+
+input:invalid,
+select:invalid,
+textarea:invalid{
+    border: 1px solid red;
+}
+input:valid,
+select:valid,
+textarea:valid{
+    background-color: white;
+    border: 2px solid green;
+
+}
+  
 select,textarea,button{
     
     display: block;  
@@ -126,16 +142,28 @@ select,textarea,button{
 }
 select{
     border-radius: 10px;
-    padding: 10px 30px;
+    padding: 5px 100px;
     width: 250px;
+    
+    width: 360px;
 
 }
 textarea{
     border-radius: 10px;
 }
 button{
-    padding: 5px 30px;
+    padding: 10px 30px;
     margin-top: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #90ee90;
+    border: 2px solid #3d8a31;
+}
+button:hover{
+    background-color: #3d8a31;
+    color: #ffffff;
+    border-color: #90ee90;
 }
 
 

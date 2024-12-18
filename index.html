@@ -75,18 +75,23 @@
             <h2 id="tituloFormulario">
                 Faça seu orçamento
             </h2>
-            <label for="">Nome</label>
-                <input  id="nome"type="text">
-            <label for="">Celular</label>
-                <input id="celular" type="tel" name="" id="">
-            <label for="">Problema do carro</label>
-                <select id="problema" name="problemaCarro" id="">
-                    <option value="Ar-condicionado"></option>
+            <label for="nome">Nome</label>
+                <input  id="nome"type="text" required maxlength="80"placeholder="Digite seu nome">
+            <label for="celular">Celular</label>
+                <input id="celular" type="tel" required maxlength="11" minlength="11" placeholder="Digite seu whatsaapp">
+            <label for="problema">Problema do carro</label>
+                <select id="problema" name="problemaCarro" required>
+                    <option value="">Selecione a categoria</option>
+                    <option value="Ar-condicionado">Ar condicionado</option>
+                    <option value="Manutenção e Troca de Componentes">Manutenção e Troca de Componentes</option>
+                    <option value="Sistemas de Freio e Suspensão">Sistemas de Freio e Suspensão</option>
+                    <option value="Sistema de Arrefecimento">Sistema de Arrefecimento</option>
+                    <option value="Sistemas de Transmissão e Motor">Sistemas de Transmissão e Motor</option>
                 </select>
-            <label for="">Marca e modelo do carro</label>
-                <input id="marcaModelo" type="text">
+            <label for="marcaModelo">Marca e modelo do carro</label>
+                <input id="marcaModelo" type="text" required  placeholder="Digite marca e modelo carro">
             <label for="">descrição do problema</label>
-                <textarea  id= "descricao"name="" id=""></textarea>
+                <textarea  id="descricao" required placeholder="Digite o que está acontecendo com o carro"></textarea>
             <button type="submit">Enviar</button>
 
 
