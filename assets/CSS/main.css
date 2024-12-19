@@ -18,7 +18,7 @@ h2{
    flex-direction: column;
    margin-top: 10px;
    color:rgb(4, 4, 105);
-   margin-left: 20px;
+   margin-left: 10px;
    justify-content: center;
    align-items: center;
   
@@ -43,18 +43,18 @@ body{
    justify-content: center;
    align-items: center;
     
-    gap:20px;
+    gap:10px;
     
     
 
 }
 .galeria img{
     display: flex;
-    width: 300px;
+    width: 200px;
     gap: 20px;
     
 }
-.servicos{
+div.servicos{
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -77,6 +77,8 @@ p{
     font-weight: 200;
     
     margin: auto 0;
+    margin-left: 10px;
+    
     
     
    
@@ -175,6 +177,30 @@ footer{
  
     
 }
+@media (max-width: 460px) {
+     div.servicos {
+        width: 360px;
+    
+    }
+    div.servicos p {
+        width: 100px;
+        margin-left: 20px;
+    }
+    .galeria{
+        display: block;
+    }
+    .galeria img{
+        width: 90px; 
+    }
+    .form{
+        width: 360px;
+    }
+    .imgGaleria{
+        width: 80px;
+        display: block;
+        
+    }
+  }
     
 
     
