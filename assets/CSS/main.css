@@ -136,7 +136,7 @@ textarea:valid{
   
 select,textarea,button{
     
-    display: block;  
+    display: flex;  
     margin: 0 auto;  
     text-align: center;
     padding: 5px 100px;
@@ -183,21 +183,21 @@ footer{
     
     }
     div.servicos p {
-        width: 100px;
+        width: 1200px;
         margin-left: 20px;
     }
     .galeria{
-        display: block;
+        display:flex;
     }
     .galeria img{
         width: 90px; 
     }
     .form{
-        width: 360px;
+        width: 380px;
     }
     .imgGaleria{
         width: 80px;
-        display: block;
+        display: flex;
         
     }
   }
